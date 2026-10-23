@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00AD37A608A44C50CD2295D0 /* SSCOMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 105AC451380BDAD1532D62C9 /* SSCOMKit */; };
+		338F5FA961CC0C8A741B0E4C /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956EB45A9047714504152868 /* ReceiveView.swift */; };
+		46804296F645C4738F3CD194 /* ReceiveDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C2BD929DF7BBDE80D8450 /* ReceiveDisplay.swift */; };
+		4FAE8486D73FD7693C45A353 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090B8DB9E767C3438739921 /* AppSettings.swift */; };
+		527A8BE44472BDBE02C0A0C7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDC07C14713B46E846BC9C /* Session.swift */; };
+		5D44448E842146EAEF85EE5A /* HelpText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D798B3245D6B62B07CC69B1 /* HelpText.swift */; };
+		6AE6FEA31EEC0352E4AE76F4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 11C3B0396142EB65EE5BB7EE /* Localizable.xcstrings */; };
+		8BBCA98EF3B5DDF628199E41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906A0436E1ACC5DDB4F5F043 /* ContentView.swift */; };
+		9BCA6161391B7257B6A803D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380AF1C0B25C8AEDE2E143EE /* Assets.xcassets */; };
+		9D0E118BCDEAD9A7AFD341C1 /* PresetsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA4006E463EE219188FF5C /* PresetsPanel.swift */; };
+		A396DE0BAA3425CE0D7C5341 /* ISPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA0D83A88BF0DB9E4795E3 /* ISPView.swift */; };
+		BB554A1AB78CA1B30BB298E3 /* SSCOMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C8EF683B55396C8381133 /* SSCOMUITests.swift */; };
+		C67043F7DEFA3B207D3FD4BF /* ControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33448E5BCA20700739846CD5 /* ControlPanel.swift */; };
+		C7240B741FCFAAC6304AE801 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13ED83C54F8EB495F274DFA /* WaveformView.swift */; };
+		DF052B1F88D4B43D817B79F7 /* SSCOMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50602D756DA439D42577BCC6 /* SSCOMApp.swift */; };
+		F19645541EA9DBC05BEA9AFD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03082711FB61FD0CA1C94F0 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		574D63EABD1F65003B7CE942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BF42E29FE1A411EDA140826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0B84B5E284E055969D7FFF3;
+			remoteInfo = SSCOM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02DA0D83A88BF0DB9E4795E3 /* ISPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPView.swift; sourceTree = "<group>"; };
+		0C84243B3CB434AD29ED9EF7 /* SSCOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSCOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C3B0396142EB65EE5BB7EE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		33448E5BCA20700739846CD5 /* ControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
+		380AF1C0B25C8AEDE2E143EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D798B3245D6B62B07CC69B1 /* HelpText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpText.swift; sourceTree = "<group>"; };
+		50602D756DA439D42577BCC6 /* SSCOMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCOMApp.swift; sourceTree = "<group>"; };
+		7BBA4006E463EE219188FF5C /* PresetsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetsPanel.swift; sourceTree = "<group>"; };
+		7F5B68C83F0A973F756BCA72 /* SSCOMKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SSCOMKit; path = SSCOMKit; sourceTree = SOURCE_ROOT; };
+		906A0436E1ACC5DDB4F5F043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		921C2BD929DF7BBDE80D8450 /* ReceiveDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveDisplay.swift; sourceTree = "<group>"; };
+		956EB45A9047714504152868 /* ReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
+		A5BDC07C14713B46E846BC9C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B13ED83C54F8EB495F274DFA /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		CCF2A2006C47547B340FBA2F /* SSCOMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSCOMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03082711FB61FD0CA1C94F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E090B8DB9E767C3438739921 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		EA2C8EF683B55396C8381133 /* SSCOMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCOMUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8F938F8B91ACB272BE1034E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AD37A608A44C50CD2295D0 /* SSCOMKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15019D7C61A2B624B505F88B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				50602D756DA439D42577BCC6 /* SSCOMApp.swift */,
+				E95C0E8D8DC1F6D11A96AF7E /* Model */,
+				9FA931C634EFAA4802511C22 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		24D477F39FE962AF6E9EEBC7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7F5B68C83F0A973F756BCA72 /* SSCOMKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		42DDE80DF94007888FFF42AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D66121B52C979DC2FD508E88 /* Resources */,
+				15019D7C61A2B624B505F88B /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5623B36BB40FBB3811C33F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C84243B3CB434AD29ED9EF7 /* SSCOM.app */,
+				CCF2A2006C47547B340FBA2F /* SSCOMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA931C634EFAA4802511C22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				906A0436E1ACC5DDB4F5F043 /* ContentView.swift */,
+				33448E5BCA20700739846CD5 /* ControlPanel.swift */,
+				3D798B3245D6B62B07CC69B1 /* HelpText.swift */,
+				02DA0D83A88BF0DB9E4795E3 /* ISPView.swift */,
+				7BBA4006E463EE219188FF5C /* PresetsPanel.swift */,
+				956EB45A9047714504152868 /* ReceiveView.swift */,
+				D03082711FB61FD0CA1C94F0 /* SettingsView.swift */,
+				B13ED83C54F8EB495F274DFA /* WaveformView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6527D1EC26A166400C2A049 = {
+			isa = PBXGroup;
+			children = (
+				42DDE80DF94007888FFF42AC /* App */,
+				24D477F39FE962AF6E9EEBC7 /* Packages */,
+				B61F741B19F74E4985D0F5FC /* UITests */,
+				5623B36BB40FBB3811C33F91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B61F741B19F74E4985D0F5FC /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2C8EF683B55396C8381133 /* SSCOMUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		D66121B52C979DC2FD508E88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				380AF1C0B25C8AEDE2E143EE /* Assets.xcassets */,
+				11C3B0396142EB65EE5BB7EE /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E95C0E8D8DC1F6D11A96AF7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E090B8DB9E767C3438739921 /* AppSettings.swift */,
+				921C2BD929DF7BBDE80D8450 /* ReceiveDisplay.swift */,
+				A5BDC07C14713B46E846BC9C /* Session.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0B84B5E284E055969D7FFF3 /* SSCOM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D22B844B5E77BA0C298ECBB /* Build configuration list for PBXNativeTarget "SSCOM" */;
+			buildPhases = (
+				49372ADFD8A4B6E048EF7134 /* Sources */,
+				05A5F27E0616B45658CE2C6D /* Resources */,
+				A8F938F8B91ACB272BE1034E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSCOM;
+			packageProductDependencies = (
+				105AC451380BDAD1532D62C9 /* SSCOMKit */,
+			);
+			productName = SSCOM;
+			productReference = 0C84243B3CB434AD29ED9EF7 /* SSCOM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF51EB0C99FA1DD423F51889 /* SSCOMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF8C8663BFF219DCF30A3E6 /* Build configuration list for PBXNativeTarget "SSCOMUITests" */;
+			buildPhases = (
+				3FE818707D70A936CC885BF4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306726A3F084D98AB67197ED /* PBXTargetDependency */,
+			);
+			name = SSCOMUITests;
+			packageProductDependencies = (
+			);
+			productName = SSCOMUITests;
+			productReference = CCF2A2006C47547B340FBA2F /* SSCOMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BF42E29FE1A411EDA140826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B0B84B5E284E055969D7FFF3 = {
+						DevelopmentTeam = 49G92DYD5H;
+						ProvisioningStyle = Manual;
+					};
+					FF51EB0C99FA1DD423F51889 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+						TestTargetID = B0B84B5E284E055969D7FFF3;
+					};
+				};
+			};
+			buildConfigurationList = C62C32EE52070AAF68A9B15C /* Build configuration list for PBXProject "SSCOM" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = A6527D1EC26A166400C2A049;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7B48E2D4F8EEB69E4812F98D /* XCLocalSwiftPackageReference "SSCOMKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5623B36BB40FBB3811C33F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0B84B5E284E055969D7FFF3 /* SSCOM */,
+				FF51EB0C99FA1DD423F51889 /* SSCOMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A5F27E0616B45658CE2C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCA6161391B7257B6A803D1 /* Assets.xcassets in Resources */,
+				6AE6FEA31EEC0352E4AE76F4 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE818707D70A936CC885BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB554A1AB78CA1B30BB298E3 /* SSCOMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49372ADFD8A4B6E048EF7134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAE8486D73FD7693C45A353 /* AppSettings.swift in Sources */,
+				8BBCA98EF3B5DDF628199E41 /* ContentView.swift in Sources */,
+				C67043F7DEFA3B207D3FD4BF /* ControlPanel.swift in Sources */,
+				5D44448E842146EAEF85EE5A /* HelpText.swift in Sources */,
+				A396DE0BAA3425CE0D7C5341 /* ISPView.swift in Sources */,
+				9D0E118BCDEAD9A7AFD341C1 /* PresetsPanel.swift in Sources */,
+				46804296F645C4738F3CD194 /* ReceiveDisplay.swift in Sources */,
+				338F5FA961CC0C8A741B0E4C /* ReceiveView.swift in Sources */,
+				DF052B1F88D4B43D817B79F7 /* SSCOMApp.swift in Sources */,
+				527A8BE44472BDBE02C0A0C7 /* Session.swift in Sources */,
+				F19645541EA9DBC05BEA9AFD /* SettingsView.swift in Sources */,
+				C7240B741FCFAAC6304AE801 /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306726A3F084D98AB67197ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0B84B5E284E055969D7FFF3 /* SSCOM */;
+			targetProxy = 574D63EABD1F65003B7CE942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C4812A7358FE3857D9461AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 49G92DYD5H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2D9EA0C3A1F9E75F757C0070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikegarcia.sscom.uitests;
+				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SSCOM;
+			};
+			name = Debug;
+		};
+		6976E099B0CE6B925BF5A947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/SSCOM.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikegarcia.sscom;
+				PRODUCT_NAME = SSCOM;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6EFF8AD50CC542143746A4CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/SSCOM.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikegarcia.sscom;
+				PRODUCT_NAME = SSCOM;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		87D3361E3BA89A70E7C9671D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikegarcia.sscom.uitests;
+				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SSCOM;
+			};
+			name = Release;
+		};
+		EF9D4D3EEA0F7116DC47838D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 49G92DYD5H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D22B844B5E77BA0C298ECBB /* Build configuration list for PBXNativeTarget "SSCOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6976E099B0CE6B925BF5A947 /* Debug */,
+				6EFF8AD50CC542143746A4CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9CF8C8663BFF219DCF30A3E6 /* Build configuration list for PBXNativeTarget "SSCOMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9EA0C3A1F9E75F757C0070 /* Debug */,
+				87D3361E3BA89A70E7C9671D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C62C32EE52070AAF68A9B15C /* Build configuration list for PBXProject "SSCOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9D4D3EEA0F7116DC47838D /* Debug */,
+				2C4812A7358FE3857D9461AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7B48E2D4F8EEB69E4812F98D /* XCLocalSwiftPackageReference "SSCOMKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SSCOMKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		105AC451380BDAD1532D62C9 /* SSCOMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSCOMKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4BF42E29FE1A411EDA140826 /* Project object */;
+}

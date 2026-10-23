@@ -1,0 +1,100 @@
+name: SSCOM
+options:
+  bundleIdPrefix: com.mikegarcia
+  deploymentTarget:
+    macOS: "27.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+packages:
+  SSCOMKit:
+    path: SSCOMKit
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY: YES
+    SWIFT_STRICT_CONCURRENCY: complete
+    ARCHS: arm64
+    ONLY_ACTIVE_ARCH: NO
+    MACOSX_DEPLOYMENT_TARGET: "27.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: 49G92DYD5H
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "Developer ID Application"
+    ENABLE_HARDENED_RUNTIME: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+  configs:
+    Release:
+      OTHER_CODE_SIGN_FLAGS: "--timestamp"
+      SWIFT_COMPILATION_MODE: wholemodule
+targets:
+  SSCOM:
+    type: application
+    platform: macOS
+    sources:
+      - path: App/Sources
+      - path: App/Resources
+    dependencies:
+      - package: SSCOMKit
+    entitlements:
+      path: App/SSCOM.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.device.serial: true
+        com.apple.security.network.client: true
+        com.apple.security.network.server: true
+        com.apple.security.files.user-selected.read-write: true
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: SSCOM
+        CFBundleName: SSCOM
+        LSApplicationCategoryType: public.app-category.developer-tools
+        NSHumanReadableCopyright: "Native macOS port of SSCOM 5.13.1 serial/network debugger."
+        CFBundleDevelopmentRegion: en
+        NSLocalNetworkUsageDescription: "SSCOM connects to serial servers, relays and other devices on your local network when you open a TCP or UDP link."
+        CFBundleLocalizations: [en, zh-Hans]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mikegarcia.sscom
+        PRODUCT_NAME: SSCOM
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/SSCOM.entitlements
+  SSCOMUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: SSCOM
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mikegarcia.sscom.uitests
+        TEST_TARGET_NAME: SSCOM
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        DEVELOPMENT_TEAM: ""
+        SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
+        SWIFT_VERSION: "5.0"
+        SWIFT_STRICT_CONCURRENCY: minimal
+        ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SSCOM:
+    build:
+      targets:
+        SSCOM: all
+    test:
+      targets:
+        - SSCOMUITests
+    run:
+      config: Debug
+    archive:
+      config: Release
