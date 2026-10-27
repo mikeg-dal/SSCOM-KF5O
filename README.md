@@ -1,8 +1,26 @@
 # SSCOM for macOS
 
-A native macOS (Apple silicon, macOS 27) port of **SSCOM 5.13.1**, the serial / TCP / UDP debugging terminal.
+A native macOS port of **SSCOM 5.13.1**, the serial / TCP / UDP debugging terminal that Waveshare
+ships for configuring and testing its serial servers and Modbus Ethernet relays. Waveshare only
+provides it for Windows, and there was no native Mac app, so this is one.
+
+> [!WARNING]
+> **Use at your own risk.** This is independent software by Mike (KF5O): an unofficial Mac port of a
+> Windows tool. It is not affiliated with, endorsed by, or supported by Waveshare or the original
+> SSCOM authors (daxia.com). Waveshare and SSCOM are their owners' trademarks.
+>
+> It can change settings on real hardware. A wrong network or serial setting can leave a device
+> unreachable until it is reset, and some commands switch physical loads (relays). Check what you send
+> before you send it, and try anything new on a device you can afford to reset first. The software is
+> provided as is, without warranty of any kind; see [LICENSE](LICENSE).
+
 Written in Swift 6 language mode with Swift 6.2 concurrency settings (MainActor-by-default, approachable concurrency),
 SwiftUI for the interface and AppKit where it matters (the high-volume receive view and terminal key handling).
+
+## Requirements
+
+- macOS 27 or later, on Apple silicon. There is no Intel build.
+- Any USB serial adapter that macOS sees as `/dev/cu.*`, or a network path to the device.
 
 ## Build
 
@@ -11,10 +29,11 @@ SwiftUI for the interface and AppKit where it matters (the high-volume receive v
 NOTARY_PROFILE=myprofile ./build.sh  # also notarize + staple (profile from `xcrun notarytool store-credentials`)
 ```
 
-Or `xcodegen generate` and open `SSCOM.xcodeproj`. Signing uses the *Developer ID Application* identity of
-team `49G92DYD5H` from the login keychain. Requirements: Xcode 27, XcodeGen.
+Or `xcodegen generate` and open `SSCOM.xcodeproj`. Signing uses a *Developer ID Application* identity
+from the login keychain; set `TEAM_ID=<your team ID>` to sign with your own team. Requirements: Xcode 27,
+XcodeGen.
 
-`SSCOMKit/` is a Swift package with all protocol logic, transports and flashers. Run `swift test` inside it (28 tests,
+`SSCOMKit/` is a Swift package with all protocol logic, transports and flashers. Run `swift test` inside it (31 tests,
 including real TCP/UDP/serial I/O and simulated STM32 and STC bootloaders).
 
 ## Feature parity with SSCOM 5.13.1
@@ -50,3 +69,7 @@ advertising panels, and the disabled “conversion calculator” and “LUA scri
 The ISP flashers are tested against simulated bootloaders and the protocol bytes were checked against
 SSCOM's decompiled code. They haven't been run against real chips from this Mac yet, so try them on a
 development board first.
+
+## License
+
+GPL-3.0. See [LICENSE](LICENSE).
