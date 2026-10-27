@@ -1,5 +1,6 @@
 #!/bin/zsh
 # Builds, tests and exports a Developer ID–signed SSCOM.app into ./dist.
+# UNSIGNED=1 ./build.sh builds without a Developer ID (no Apple account needed).
 # Optional: NOTARY_PROFILE=<notarytool keychain profile> ./build.sh   to notarize and staple.
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -11,6 +12,14 @@ xcodegen generate
 (cd SSCOMKit && swift test)
 
 rm -rf build/archive dist
+if [[ "${UNSIGNED:-0}" == 1 ]]; then
+  # No Apple Developer account needed: ad-hoc signed, for use on this Mac only.
+  xcodebuild -project $APP.xcodeproj -scheme $APP -configuration Release -derivedDataPath build/dd \
+    CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= build | xcbeautify 2>/dev/null || true
+  test -d build/dd/Build/Products/Release/$APP.app || { echo "Build failed"; exit 1; }
+  mkdir -p dist && ditto build/dd/Build/Products/Release/$APP.app dist/$APP.app
+  echo "Done (unsigned): dist/$APP.app"; exit 0
+fi
 xcodebuild -project $APP.xcodeproj -scheme $APP -configuration Release \
   -archivePath build/archive/$APP.xcarchive DEVELOPMENT_TEAM=$TEAM_ID archive | xcbeautify 2>/dev/null || true
 test -d build/archive/$APP.xcarchive || { echo "Archive failed"; exit 1; }
